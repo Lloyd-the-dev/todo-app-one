@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<h1>Your TO-DO List</h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="What are you doing today?" />
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add todo" />
+		</form>
+        <p class="instruc">Click on any todo to mark as completed</p>
+	</header>
+    
+	<main>
+		<section class="task-list">
+           
+			<h2>Todos</h2>
+
+			<div id="tasks">
+
+			</div>
+		</section>
+	</main>
+        
+
+    <script src="index.js"></script>
+</body>
+</html>
