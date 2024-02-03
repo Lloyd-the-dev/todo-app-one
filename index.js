@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
             task_edit_el.addEventListener('click', (e) => {
                 if (task_edit_el.innerText.toLowerCase() == "edit") {
                     task_edit_el.innerText = "Save";
-                    task_input_el.removeAttribute("readon   ly");
+                    task_input_el.removeAttribute("readonly");
                     task_input_el.focus();
                 } else {
                     task_edit_el.innerText = "Edit";
