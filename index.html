@@ -10,32 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-		<h1>Your TO-DO List</h1>
-		<form id="new-task-form">
-			<input 
-				type="text" 
-				name="new-task-input" 
-				id="new-task-input" 
-				placeholder="What are you doing today?" />
-			<input 
-				type="submit"
-				id="new-task-submit" 
-				value="Add todo" />
-		</form>
-        <p class="instruc">Click on any todo to mark as completed</p>
-	</header>
-    
-	<main>
-		<section class="task-list">
-           
-			<h2>Todos</h2>
-
-			<div id="tasks">
-
-			</div>
-		</section>
-	</main>
+    <div class="container">
+		<header>
+			<h1>Your TO-DO List</h1>
+			<form id="new-task-form">
+				<label for="">CREATE A TODO</label>
+				<input 
+					type="text" 
+					name="new-task-input" 
+					id="new-task-input" 
+					placeholder="What are you doing today?" />
+				<input 
+					type="submit"
+					id="new-task-submit" 
+					value="Add todo" />
+			</form>
+		</header>
+		
+		<main>
+			<section class="task-list">
+			   
+				<h4>TODO LIST</h4>
+				<p class="instruc">Click on any todo to mark as completed</p>
+				<div id="tasks">
+	
+				</div>
+			</section>
+		</main>
+	</div>
         
 
     <script src="index.js"></script>
