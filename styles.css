@@ -50,17 +50,21 @@ header h1{
 	flex-direction: column;
 }
 
-input, button {
+.inp, input, button {
 	appearance: none;
 	border: none;
 	outline: none;
 	background: none;
 }
+#txtArea{
+	background-color: #fff;
+	margin: 1rem auto;
+}
 #new-task-form label{
 	color: var(--grey);
 	margin: 1rem 0;
 }
-#new-task-input {
+#new-task-input, #txtArea {
 	flex: 1 1 0%;
 	background-color: var(--light);
 	padding: 1rem;
@@ -178,4 +182,61 @@ main {
 }
 .task .actions .delete {
 	color: crimson;
+}
+/* Modal styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: black;
+}
+.modal-content h2{
+	margin-bottom: 1rem;
+}
+.todo-texts{
+	display: flex;
+	flex-direction: column;
+}
+.todo-texts input, .todo-texts .inp{
+	border: 1px solid #111827;
+	margin: 1rem 0;
+	width: 40%;
+	padding: .5rem;
+	border-radius: 5px;
+}
+#save-todo{
+	background-color: #EA40A4;
+	border-radius: 5px;
+	padding: .8rem 2rem;
+	color: white;
+	cursor: pointer;
+	transition: 1s ease-out;
+}
+#save-todo:hover{
+	opacity: 0.8;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
